@@ -4,24 +4,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+    content="Crossing the Human-Robot Embodiment Gap with Sim-to-Real RL using One Human Demonstration">
+  <meta name="keywords" content="Human2Sim2Robot, Sim-to-Real RL, Human-Robot Embodiment Gap">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>Human2Sim2Robot</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2N2D4X5LF6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-
-    function gtag()
-    {
-      dataLayer.push(arguments);
-    }
-
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-PYVRSFMDRL');
+    gtag('config', 'G-2N2D4X5LF6');
   </script>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
@@ -51,36 +46,6 @@
         <span aria-hidden="true"></span>
       </a>
     </div>
-    <div class="navbar-menu">
-      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-        <a class="navbar-item" href="https://keunhong.com">
-          <span class="icon">
-            <i class="fas fa-home"></i>
-          </span>
-        </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More Research
-          </a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://hypernerf.github.io">
-              HyperNeRF
-            </a>
-            <a class="navbar-item" href="https://nerfies.github.io">
-              Nerfies
-            </a>
-            <a class="navbar-item" href="https://latentfusion.github.io">
-              LatentFusion
-            </a>
-            <a class="navbar-item" href="https://photoshape.github.io">
-              PhotoShape
-            </a>
-          </div>
-        </div>
-      </div>
-
-    </div>
   </nav>
 
 
@@ -89,7 +54,8 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Nerfies: Deformable Neural Radiance Fields</h1>
+            <h1 class="title is-1 publication-title">Crossing the Human-Robot Embodiment Gap with Sim-to-Real RL using
+              One Human Demonstration</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
                 <a href="https://keunhong.com">Keunhong Park</a><sup>1</sup>,</span>
@@ -119,9 +85,9 @@
 
             <div class="column has-text-centered">
               <div class="publication-links">
-                <!-- PDF Link. -->
+                <!-- TODO: Add arxiv link -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/pdf/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://human2sim2robot.github.io" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
@@ -129,7 +95,8 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2011.12948" class="external-link button is-normal is-rounded is-dark">
+                  <!-- TODO: Add arxiv link -->
+                  <a href="https://human2sim2robot.github.io" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -138,8 +105,8 @@
                 </span>
                 <!-- Video Link. -->
                 <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                    class="external-link button is-normal is-rounded is-dark">
+                  <!-- TODO: Add video link -->
+                  <a href="https://human2sim2robot.github.io" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-youtube"></i>
                     </span>
@@ -148,22 +115,14 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/google/nerfies" class="external-link button is-normal is-rounded is-dark">
+                  <!-- TODO: Add code link -->
+                  <a href="https://human2sim2robot.github.io" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
                 </span>
-                <!-- Dataset Link. -->
-                <span class="link-block">
-                  <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="far fa-images"></i>
-                    </span>
-                    <span>Data</span>
-                  </a>
               </div>
 
             </div>
@@ -180,9 +139,14 @@
           <source src="./static/videos/teaser.mp4" type="video/mp4">
         </video>
         <h2 class="subtitle has-text-centered">
-          <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-          free-viewpoint
-          portraits.
+          <p>
+            <span class="dnerf">Human2Sim2Robot</span> trains dexterous manipulation policies from one human RGB-D
+            video.
+          </p>
+          <p>
+            We use object trajectories and pre-manipulation poses to guide RL in sim and thereby bridge the human-robot
+            embodiment gap, achieving zero-shot sim-to-real transfer.
+          </p>
         </h2>
       </div>
     </div>
@@ -247,31 +211,23 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              We present the first method capable of photorealistically reconstructing a non-rigidly
-              deforming scene using photos/videos captured casually from mobile phones.
+              Teaching robots dexterous manipulation skills often requires collecting hundreds of demonstrations using
+              wearables or teleoperation, a process that is challenging to scale. Videos of human-object interactions
+              are easier to collect and scale, but leveraging them directly for robot learning is difficult due to the
+              lack of explicit action labels from videos and morphological differences between robot and human hands.
             </p>
             <p>
-              Our approach augments neural radiance fields
-              (NeRF) by optimizing an
-              additional continuous volumetric deformation field that warps each observed point into a
-              canonical 5D NeRF.
-              We observe that these NeRF-like deformation fields are prone to local minima, and
-              propose a coarse-to-fine optimization method for coordinate-based models that allows for
-              more robust optimization.
-              By adapting principles from geometry processing and physical simulation to NeRF-like
-              models, we propose an elastic regularization of the deformation field that further
-              improves robustness.
-            </p>
-            <p>
-              We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-              photos/videos into deformable NeRF
-              models that allow for photorealistic renderings of the subject from arbitrary
-              viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-              using a
-              rig with two mobile phones that take time-synchronized photos, yielding train/validation
-              images of the same pose at different viewpoints. We show that our method faithfully
-              reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-              fidelity.
+              We propose <span class="dnerf">Human2Sim2Robot</span>, a novel real-to-sim-to-real framework for training
+              dexterous manipulation policies using only one RGB-D video of a human demonstrating a task. Our method
+              utilizes reinforcement learning (RL) in simulation to cross the human-robot embodiment gap without relying
+              on wearables, teleoperation, or large-scale data collection typically necessary for imitation learning
+              methods. From the demonstration, we extract two task-specific components: (1) the object pose trajectory
+              to define an object-centric, embodiment-agnostic reward function, and (2) the pre-manipulation hand pose
+              to initialize and guide exploration during RL training. We found that these two components are highly
+              effective for learning the desired task, eliminating the need for task-specific reward shaping and tuning.
+              We demonstrate that Human2Sim2Robot significantly outperforms trajectory retargeting and one-shot
+              imitation learning across a wide range of tasks, including grasping, non-prehensile manipulation, and
+              extrinsic manipulation.
             </p>
           </div>
         </div>
