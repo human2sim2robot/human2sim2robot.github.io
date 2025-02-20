@@ -110,8 +110,15 @@ body {
 .publication-body img {
 }
 
+.teaser-video {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .results-carousel {
   overflow: hidden;
+  margin-bottom: 30px;
 }
 
 .results-carousel .item {
@@ -120,11 +127,11 @@ body {
   border: 1px solid #bbb;
   border-radius: 10px;
   padding: 0;
-  font-size: 0;
 }
 
 .results-carousel video {
   margin: 0;
+  margin-bottom: -5px;
 }
 
 
@@ -154,4 +161,60 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.t {
+  display: table;
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  display: table-row
+}
+
+li {
+  display: table-cell;
+  justify-content: center;
+  align-items: center;
+}
+
+li .grasp {
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+li .non-prehensile {
+  width: 90%;
+  height: 100%;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+li .item-plate-push {
+  height: 100%;
+  margin-left: -5px;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+li .multi-step {
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+li .item-OOD {
+  height: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+iframe {
+  display: block;
 }
