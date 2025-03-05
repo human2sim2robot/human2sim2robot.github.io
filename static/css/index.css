@@ -207,18 +207,22 @@ body {
 /* Specific category sizing */
 /* For grasping tasks - 2 videos per row on desktop */
 .t li.grasp-item,
-.t li.OOD-item {
+.t li.OOD-item,
+.t li.ablation-suff-item {
   width: 50%;
 }
 
 .t li.robust-bg-item,
-.t li.robust-perturb-item {
+.t li.robust-perturb-item,
+.t li.ablation-suff-item {
   width: 33%;
 }
 
 /* For non-prehensile tasks - 4 videos per row on desktop */
 .t li.non-prehensile-item,
-.t li.robust-misc-item {
+.t li.robust-misc-item, 
+.t li.ablation-obj-item,
+.t li.ablation-premanip-item {
   width: 25%;
 }
 
