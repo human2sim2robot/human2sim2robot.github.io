@@ -163,124 +163,65 @@ body {
   border-radius: 5px;
 }
 
-/* Video layout section */
 .t {
+  display: table;
   width: 100%;
-  margin-bottom: 2rem;
+  height: auto;
 }
 
-/* Make the unordered list more flexible */
-.t ul {
-  display: flex;
-  flex-wrap: wrap;
+ul {
+  display: table-row
+}
+
+li {
+  display: table-cell;
   justify-content: center;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-/* Base styling for all list items */
-.t li {
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  padding: 0.5rem;
-  box-sizing: border-box;
 }
 
-/* Standardize video container styling */
-.t li > div {
-  width: 100%;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  overflow: hidden;
+li .grasp {
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
-/* Make all videos responsive within their containers */
-.t video {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
+li .non-prehensile {
+  width: 90%;
+  height: 100%;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
-/* Specific category sizing */
-/* For grasping tasks - 2 videos per row on desktop */
-.t li.grasp-item,
-.t li.OOD-item {
-  width: 50%;
+li .robustness {
+  width: 90%;
+  height: 100%;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
-.t li.robust-bg-item,
-.t li.robust-perturb-item {
-  width: 33%;
+li .item-plate-push {
+  height: 90%;
+  margin-left: -5px;
+  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
-/* For non-prehensile tasks - 4 videos per row on desktop */
-.t li.non-prehensile-item,
-.t li.robust-misc-item {
-  width: 25%;
+li .multi-step {
+  height: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
-/* For multi-step tasks - 1 video per row */
-.t li.multi-step-item {
-  width: 75%;
-  max-width: 800px;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 1200px) {
-  .t li.non-prehensile-item {
-    width: 33.33%;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .t li.grasp-item {
-    width: 100%;
-  }
-  
-  .t li.non-prehensile-item {
-    width: 50%;
-  }
-  
-  .t li.multi-step-item {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .t li.non-prehensile-item {
-    width: 100%;
-  }
-}
-
-/* Fix for old class names to ensure backward compatibility */
-.t li .grasp,
-.t li .non-prehensile,
-.t li .multi-step,
-.t li .item-plate-push,
-.t li .robustness,
-.t li .item-OOD {
-  width: 100%;
-  height: auto;
-  margin: 0 0 1rem 0;
+li .item-OOD {
+  height: 100%;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 iframe {
   display: block;
-}
-
-/* Medium screens (two videos per row) */
-@media (max-width: 1024px) {
-  li {
-    width: 48%; /* Two videos per row */
-  }
-}
-
-/* Small screens (one video per row) */
-@media (max-width: 600px) {
-  li {
-    width: 100%; /* Full width */
-  }
 }
