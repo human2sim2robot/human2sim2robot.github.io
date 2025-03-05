@@ -116,6 +116,12 @@ body {
   margin-bottom: 50px;
 }
 
+.splash-video {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 .results-carousel {
   overflow: hidden;
   margin-bottom: 30px;
