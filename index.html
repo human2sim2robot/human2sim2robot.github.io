@@ -96,7 +96,6 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <!-- TODO: Add code link -->
                   <a href="https://github.com/tylerlum/human2sim2robot" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -196,6 +195,7 @@
                   <video poster="" id="plate-lift-rack" autoplay controls muted loop playsinline>
                     <source src="./static/videos/robot_vids/plate_liftrack.mov" type="video/mp4">
                   </video>
+                  <p>&#9989;: 60%</p>
                 </div>
               </li>
               <li class="grasp-item">
@@ -204,6 +204,7 @@
                   <video poster="" id="pitcher-pour" autoplay controls muted loop playsinline>
                     <source src="./static/videos/robot_vids/pitcher_pour.mov" type="video/mp4">
                   </video>
+                  <p>&#9989;: 100%</p>
                 </div>
               </li>
             </ul>
@@ -218,6 +219,7 @@
                   <video poster="" id="snackbox-push" autoplay controls muted loop playsinline>
                     <source src="./static/videos/robot_vids/snackbox_push.mov" type="video/mp4">
                   </video>
+                  <p>&#9989;: 100%</p>
                 </div>
               </li>
               <li class="non-prehensile-item">
@@ -226,6 +228,7 @@
                   <video poster="" id="snackbox-pivot" autoplay controls muted loop playsinline>
                     <source src="./static/videos/robot_vids/snackbox_pivot.mov" type="video/mp4">
                   </video>
+                  <p>&#9989;: 100%</p>
                 </div>
               </li>
               <li class="non-prehensile-item">
@@ -234,6 +237,7 @@
                   <video poster="" id="snackbox-push-pivot" autoplay controls muted loop playsinline>
                     <source src="./static/videos/robot_vids/snackbox_pushpivot.mov" type="video/mp4">
                   </video>
+                  <p>&#9989;: 100%</p>
                 </div>
               </li>
               <li class="non-prehensile-item">
@@ -242,6 +246,7 @@
                   <video poster="" id="plate-push" autoplay controls muted loop playsinline>
                     <source src="./static/videos/robot_vids/plate_push.mov" type="video/mp4">
                   </video>
+                  <p>&#9989;: 100%</p>
                 </div>
               </li>
             </ul>
@@ -256,6 +261,7 @@
                   <video poster="" id="plate-pivot-lift-rack" autoplay controls muted loop playsinline>
                     <source src="./static/videos/robot_vids/plate_pivotliftrack.mov" type="video/mp4">
                   </video>
+                  <p>&#9989;: 86.6%</p>
                 </div>
               </li>
             </ul>
@@ -447,52 +453,146 @@
   </section>
 
   <section class="section">
+    <h2 class="title is-2 has-text-centered"> Baselines </h2>
+    <h2 class="title is-6 has-text-centered"> All baseline videos are played at 2x speed.</h2>
     <!--Baseline Videos.-->
     <section class="hero is-light is-small">
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h2 class="title is-2">Baseline: Open-Loop Trajectory Replay</h2>
+          <h2 class="title is-3">Replay</h2>
           <div id="results-carousel" class="carousel results-carousel">
             <div class="item item-snackbox-push">
-              <p>Snackbox Push</p>
+              <p>Snackbox Push (&#9989;: 10%)</p>
               <video poster="" id="snackbox-push" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/baseline/snackbox_push_fail.mov" type="video/mp4">
+                <source src="./static/videos/baseline_replay/snackbox_push_fail.mov" type="video/mp4">
               </video>
             </div>
             <div class="item item-snackbox-pivot">
-              <p>Snackbox Pivot</p>
+              <p>Snackbox Pivot (&#9989;: 100%)</p>
               <video poster="" id="snackbox-pivot" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/baseline/snackbox_pivot_success.mov" type="video/mp4">
+                <source src="./static/videos/baseline_replay/snackbox_pivot_success.mov" type="video/mp4">
               </video>
             </div>
             <div class="item item-snackbox-push-pivot">
-              <p>Snackbox Push Pivot</p>
+              <p>Snackbox Push Pivot (&#9989;: 40%)</p>
               <video poster="" id="snackbox-push-pivot" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/baseline/snackbox_pushpivot_meh.mov" type="video/mp4">
+                <source src="./static/videos/baseline_replay/snackbox_pushpivot_meh.mov" type="video/mp4">
               </video>
             </div>
             <div class="item item-plate-push">
-              <p>Plate Push</p>
+              <p>Plate Push (&#9989;: 0%)</p>
               <video poster="" id="plate-push" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/baseline/plate_push_fail.mov" type="video/mp4">
+                <source src="./static/videos/baseline_replay/plate_push_fail.mov" type="video/mp4">
               </video>
             </div>
             <div class="item item-plate-lift-rack">
-              <p>Plate Lift Rack</p>
+              <p>Plate Lift Rack (&#9989;: 0%)</p>
               <video poster="" id="plate-lift-rack" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/baseline/plate_liftrack_fail.mov" type="video/mp4">
+                <source src="./static/videos/baseline_replay/plate_liftrack_fail.mov" type="video/mp4">
               </video>
             </div>
             <div class="item item-plate-pivot-lift-rack">
-              <p>Plate Pivot Lift Rack</p>
+              <p>Plate Pivot Lift Rack (&#9989;: 0%)</p>
               <video poster="" id="plate-pivot-lift-rack" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/baseline/plate_pivotliftrack_fail.mov" type="video/mp4">
+                <source src="./static/videos/baseline_replay/plate_pivotliftrack_fail.mov" type="video/mp4">
               </video>
             </div>
             <div class="item item-pitcher-pour">
-              <p>Pitcher Pour</p>
+              <p>Pitcher Pour (&#9989;: 30%)</p>
               <video poster="" id="pitcher-pour" autoplay controls muted loop playsinline height="100%">
-                <source src="./static/videos/baseline/pitcher_pour_meh.mov" type="video/mp4">
+                <source src="./static/videos/baseline_replay/pitcher_pour_meh.mov" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <h2 class="title is-3">Object-Aware Replay</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-snackbox-push">
+              <p>Snackbox Push (&#9989;: 10%)</p>
+              <video poster="" id="snackbox-push" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_replaywarp/snackbox_push.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-snackbox-pivot">
+              <p>Snackbox Pivot (&#9989;: 100%)</p>
+              <video poster="" id="snackbox-pivot" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_replaywarp/snackbox_pivot.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-snackbox-push-pivot">
+              <p>Snackbox Push Pivot (&#9989;: 70%)</p>
+              <video poster="" id="snackbox-push-pivot" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_replaywarp/snackbox_pushpivot.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-plate-push">
+              <p>Plate Push (&#9989;: 0%)</p>
+              <video poster="" id="plate-push" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_replaywarp/plate_push.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-plate-lift-rack">
+              <p>Plate Lift Rack (&#9989;: 0%)</p>
+              <video poster="" id="plate-lift-rack" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_replaywarp/plate_liftrack.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-plate-pivot-lift-rack">
+              <p>Plate Pivot Lift Rack (&#9989;: 33.3%)</p>
+              <video poster="" id="plate-pivot-lift-rack" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_replaywarp/plate_pivotliftrack.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-pitcher-pour">
+              <p>Pitcher Pour (&#9989;: 50%)</p>
+              <video poster="" id="pitcher-pour" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_replaywarp/pitcher_pour.mov" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+          <h2 class="title is-3">Behavior Cloning (Diffusion Policy)</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-snackbox-push">
+              <p>Snackbox Push (&#9989;: 30%)</p>
+              <video poster="" id="snackbox-push" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_dp/snackbox_push.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-snackbox-pivot">
+              <p>Snackbox Pivot (&#9989;: 80%)</p>
+              <video poster="" id="snackbox-pivot" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_dp/snackbox_pivot.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-snackbox-push-pivot">
+              <p>Snackbox Push Pivot (&#9989;: 20%)</p>
+              <video poster="" id="snackbox-push-pivot" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_dp/snackbox_pushpivot.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-plate-push">
+              <p>Plate Push (&#9989;: 0%)</p>
+              <video poster="" id="plate-push" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_dp/plate_push.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-plate-lift-rack">
+              <p>Plate Lift Rack (&#9989;: 0%)</p>
+              <video poster="" id="plate-lift-rack" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_dp/plate_liftrack.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-plate-pivot-lift-rack">
+              <p>Plate Pivot Lift Rack (&#9989;: 0%)</p>
+              <video poster="" id="plate-pivot-lift-rack" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_dp/plate_pivotliftrack.mov" type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-pitcher-pour">
+              <p>Pitcher Pour (&#9989;: 40%)</p>
+              <video poster="" id="pitcher-pour" autoplay controls muted loop playsinline height="100%">
+                <source src="./static/videos/baseline_dp/pitcher_pour.mov" type="video/mp4">
               </video>
             </div>
           </div>
@@ -504,7 +604,7 @@
                 <h2 class="title is-4">Baseline</h2>
                 <div class="item-OOD">
                   <video poster="" id="plate-lift-rack" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/baseline/robust/snackbox_OODposition1_fail.mov" type="video/mp4">
+                    <source src="./static/videos/baseline_replay/robust/snackbox_OODposition1_fail.mov" type="video/mp4">
                   </video>
                 </div>
               </li>
@@ -521,7 +621,7 @@
               <li> 
                 <div class="item-OOD">
                   <video poster="" id="plate-lift-rack" autoplay controls muted loop playsinline height="100%">
-                    <source src="./static/videos/baseline/robust/snackbox_OODposition3_fail.mov" type="video/mp4">
+                    <source src="./static/videos/baseline_replay/robust/snackbox_OODposition3_fail.mov" type="video/mp4">
                   </video>
                 </div>
               </li>
